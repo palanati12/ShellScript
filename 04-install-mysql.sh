@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-if [ID -ne 0 ]
+if [ $ID -ne 0 ]
 then 
 echo "ERROR:please run te script with root access"
 else
