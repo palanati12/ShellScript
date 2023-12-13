@@ -9,7 +9,7 @@ exit 1
 else
 echo "you are the root acess"
 fi
-install mysql -y
+yum install mysql -y
 
 if [$? -ne 0]
 then
