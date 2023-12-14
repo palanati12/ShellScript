@@ -18,7 +18,7 @@ fi
 }
 
 
-if [ ID -ne 0 ]
+if [ $ID -ne 0 ]
 then 
     echo "please access with root user"
     exit 1
