@@ -11,7 +11,7 @@ TIMESTAMP=$(date %F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
-if ( $1 -ne 0 )
+if [ $1 -ne 0 ]
 then 
     echo -u "ERROR:: $2 ....$R is failed $N"
 else
@@ -19,12 +19,12 @@ else
 fi           
 }
 
-if ( $ID -ne 0 )
+if [ $ID -ne 0 ]
 then
-    echo -u " $R ERROR:: please run the script with root access $N"
+    echo -u "$R ERROR:: please run the script with root access $N"
     exit 1
 else
-    echo -u " $G You are the root user $N"  
+    echo -u "$G You are the root user $N"  
 fi
 
 for package in $@
