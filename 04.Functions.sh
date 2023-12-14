@@ -13,7 +13,7 @@ if [ $1 -ne 0 ]
 then
     echo "installing $2 is failed"
 else 
-    echo " installing $2 is success"  
+    echo "installing $2 is success"  
 fi          
 }
 
