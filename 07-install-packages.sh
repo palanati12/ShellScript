@@ -6,7 +6,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-TIMESTAMP=$(date %F-%H-%M-%S)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
@@ -21,7 +21,7 @@ fi
 
 if [ $ID -ne 0 ]
 then
-    echo -u "$R ERROR:: please run the script with root access $N"
+    echo -u "$R ERROR::please run the script with root access $N"
     exit 1
 else
     echo -u "$G You are the root user $N"  
