@@ -30,7 +30,7 @@ fi
 for package in $@
 do
   yum list installed $package  #to konw the list of packages installed here
-  if ($? -ne 0 )
+  if ( $? -ne 0 )
   then
       yum install $package -y &>> $LOGFILE
       VALIDATE $?  "installation of $package"
