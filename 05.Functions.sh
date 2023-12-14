@@ -26,10 +26,10 @@ fi
 
 if [ $ID -ne 0 ]
 then 
-    echo " $R please access with root user $N"
+    echo -e " $R please access with root user $N"
     exit 1
 else 
-    echo " $G you are a root user"
+    echo -e " $G you are a root user"
 fi    
 
 yum install mysql -y &>>$LOGFILE
