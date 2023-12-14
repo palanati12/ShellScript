@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID =$(id -u)
+ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -15,7 +15,8 @@ if ( $1 -ne 0 )
 then 
     echo -u "ERROR:: $2 ....$R is failed $N"
 else
-    echo -u "$2 ....$G is success $N"        
+    echo -u "$2 ....$G is success $N" 
+fi           
 }
 
 if ( $ID -ne 0 )
