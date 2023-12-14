@@ -9,7 +9,7 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
 VALIDATE(){
-if [ $1 -ne o ]   
+if [ $1 -ne 0 ]   
 then
     echo "installing $2 is failed"
 else 
